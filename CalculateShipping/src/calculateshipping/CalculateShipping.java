@@ -2,8 +2,8 @@
  * Make a program to determine shipping costs
  * Shipping rates:
  * Over $75, free
- * Between $50 and $75, cost is $5
- * Over $25 but less than $50 is $15
+ * Between $50 and $75, cost is $15
+ * Over $25 but less than $50 is $10
  */
 package calculateshipping;
 import java.util.Scanner;
