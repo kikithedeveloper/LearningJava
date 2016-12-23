@@ -15,22 +15,39 @@ public class MovieListChallenge {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String title = "";
-        String rating = "";
-        int year = 0;
-        int runtime = 0;
+        // instantiate a blank Movie object
+        // use accessor and mutator methods to get or set
+        Movie favoriteMovie = new Movie();
         Scanner in = new Scanner(System.in);
         System.out.println("I want to know your favorite movie.");
         System.out.println("Enter the title of the movie: ");
-        title = in.nextLine();
+        favoriteMovie.setMovieTitle(in.nextLine());
         System.out.println("Enter the rating of the movie: G, PG, PG-13, R");
-        rating = in.nextLine();
+        favoriteMovie.setMovieRating(in.nextLine());
         System.out.println("Enter the year of the movie: ");
-        year = in.nextInt();
+        favoriteMovie.setMovieYear(in.nextInt());
         System.out.println("Enter the runtime of the movie in minutes: ");
-        runtime = in.nextInt();
-        Movie favoriteMovie = new Movie(title, rating, year, runtime);
-        System.out.println(favoriteMovie.toString());
+        favoriteMovie.setMovieRunTime(in.nextInt());
+        System.out.println("You can change the movie title if you wish.");
+        favoriteMovie.setMovieTitle(in.nextLine());
+        System.out.println(favoriteMovie.getMovieTitle());
+
+//        String title = "";
+//        String rating = "";
+//        int year = 0;
+//        int runtime = 0;
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("I want to know your favorite movie.");
+//        System.out.println("Enter the title of the movie: ");
+//        title = in.nextLine();
+//        System.out.println("Enter the rating of the movie: G, PG, PG-13, R");
+//        rating = in.nextLine();
+//        System.out.println("Enter the year of the movie: ");
+//        year = in.nextInt();
+//        System.out.println("Enter the runtime of the movie in minutes: ");
+//        runtime = in.nextInt();
+//        Movie favoriteMovie = new Movie(title, rating, year, runtime);
+//        System.out.println(favoriteMovie.toString());
     }
     
 }
