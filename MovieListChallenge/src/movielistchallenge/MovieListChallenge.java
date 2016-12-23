@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package movielistchallenge;
-
+import java.util.Scanner;
 /**
  *
  * @author kimberlylin
@@ -15,7 +15,22 @@ public class MovieListChallenge {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String title = "";
+        String rating = "";
+        int year = 0;
+        int runtime = 0;
+        Scanner in = new Scanner(System.in);
+        System.out.println("I want to know your favorite movie.");
+        System.out.println("Enter the title of the movie: ");
+        title = in.nextLine();
+        System.out.println("Enter the rating of the movie: G, PG, PG-13, R");
+        rating = in.nextLine();
+        System.out.println("Enter the year of the movie: ");
+        year = in.nextInt();
+        System.out.println("Enter the runtime of the movie in minutes: ");
+        runtime = in.nextInt();
+        Movie favoriteMovie = new Movie(title, rating, year, runtime);
+        System.out.println(favoriteMovie.toString());
     }
     
 }

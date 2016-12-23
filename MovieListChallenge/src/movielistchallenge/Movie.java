@@ -25,6 +25,10 @@ public class Movie {
         this.movieYear = movieYear;
         this.movieRunTime = movieRunTime;
     }
+    public Movie()
+    {
+        
+    }
     public String toString()
     {
         return "Movie Title: " + movieTitle +
