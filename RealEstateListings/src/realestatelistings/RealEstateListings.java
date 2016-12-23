@@ -21,6 +21,8 @@ public class RealEstateListings {
         System.out.println(land.toString());
         System.out.println(estate.toString());
         System.out.println(chi_property.toString());
+        estate.setAskingPrice(500000);
+        System.out.println(estate.toString());
     }
     
 }
