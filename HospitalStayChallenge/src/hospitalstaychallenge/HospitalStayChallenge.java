@@ -29,11 +29,15 @@ public class HospitalStayChallenge {
         
         do{
             hospitalCharge = getTotalHospitalCost();
+            
             System.out.println("Enter the medication charges: ");
             medCharge = in.nextDouble();
+            
             System.out.println("Enter the lab service charges: ");
             labCharge = in.nextDouble();
+            
             System.out.println("The total cost is " + (hospitalCharge + medCharge + labCharge));
+            
             System.out.println("Do you have another patient? y or n");
             response = in.next();
         } while (response.equalsIgnoreCase("y"));
@@ -43,16 +47,21 @@ public class HospitalStayChallenge {
         Scanner in = new Scanner(System.in);
         int numOfDay;
         double dailyRate;
+        
         System.out.println("Did the patient stay overnight? y or n");
         String isOvernight = in.nextLine();
+        
         if ("y".equals(isOvernight))
         {
             System.out.println("How many night(s) did the patient stay? ");
             numOfDay = in.nextInt();
+        
             System.out.println("Enter the daily rate: ");
             dailyRate = in.nextDouble();
+            
             return numOfDay * dailyRate;
         } 
+        
         return 0;
     }
     
