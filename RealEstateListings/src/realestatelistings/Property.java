@@ -23,4 +23,21 @@ public class Property {
         numBaths = 0;
         numBeds = 0;
     }
+    public Property(double askingPrice, String propertyType, double lotSize,
+            int numBaths, int numBeds)
+    {
+        this.askingPrice = askingPrice;
+        this.propertyType = propertyType;
+        this.lotSize = lotSize;
+        this.numBaths = numBaths;
+        this.numBeds = numBeds;
+    }
+    public String toString()
+    {
+        return "Asking price: $" + askingPrice +
+                "\nProperty Type: " + propertyType +
+                "\nLot Size: " + lotSize +
+                "\nNumber of baths: " + numBaths +
+                "\nNumber of bedrooms: " + numBeds;
+    }
 }
