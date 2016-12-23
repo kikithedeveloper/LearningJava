@@ -36,7 +36,8 @@ public class HospitalStayChallenge {
             System.out.println("Enter the lab service charges: ");
             labCharge = in.nextDouble();
             
-            System.out.println("The total cost is " + (hospitalCharge + medCharge + labCharge));
+            double totalCost = hospitalCharge + medCharge + labCharge;
+            System.out.printf("The total cost is $%6.2f", totalCost);
             
             System.out.println("Do you have another patient? y or n");
             response = in.next();
