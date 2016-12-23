@@ -20,7 +20,7 @@ public class Property {
         this.askingPrice = askingPrice;
         this.propertyType = propertyType;
         this.lotSize = lotSize;
-        this.numBaths = numBaths;
-        this.numBeds = numBeds;
+        numBaths = 0;
+        numBeds = 0;
     }
 }
