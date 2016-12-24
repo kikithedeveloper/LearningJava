@@ -18,16 +18,16 @@ public class Movie {
     private String movieRating;
     private int movieYear;
     private int movieRunTime;
+    public Movie()
+    {
+        
+    }
     public Movie(String movieTitle, String movieRating, int movieYear, int movieRunTime)
     {
         this.movieTitle = movieTitle;
         this.movieRating = movieRating;
         this.movieYear = movieYear;
         this.movieRunTime = movieRunTime;
-    }
-    public Movie()
-    {
-        
     }
     public String toString()
     {
