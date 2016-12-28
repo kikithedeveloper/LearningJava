@@ -3,7 +3,7 @@ package realestatemls;
 
 /**
  *
- * @author Peggy Fisher
+ * @author kimberlylin
  */
 public class Property {
     private double askingPrice;

@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 /**
  *
- * @author Peggy Fisher
+ * @author kimberlylin
  */
 public class RealEstateMLS {
 
